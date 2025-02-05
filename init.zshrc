@@ -43,12 +43,10 @@ alias loc="npx sloc --format cli-table --format-option head --exclude 'build|\.s
 # load zsh-completions
 autoload -U compinit && compinit
 
+# use nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# use nvm
-source ~/.zshrc
 
 # use starship theme (needs to be at the end)
 eval "$(starship init zsh)"
