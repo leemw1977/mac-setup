@@ -9,7 +9,7 @@ fi
 # Install apps from Brewfile
 echo "Installing apps and tools..."
 brew update
-brew bundle --file=~/Brewfile
+brew bundle --file=./Brewfile
 
 # macOS custom preferences
 echo "Setting macOS preferences..."
@@ -36,8 +36,8 @@ defaults write com.apple.finder ShowStatusBar -bool true
 killall Finder;
 
 
-git config --global user.name "Your Name"
-git config --global user.email "you@your-domain.com"
+git config --global user.name "Lee Williams"
+git config --global user.email "leemw1977@outlook.com"
 git config --global init.defaultBranch main
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
