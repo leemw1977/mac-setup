@@ -46,6 +46,8 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 git config --global init.defaultBranch main
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global user.signingkey ABC123DEF456GHI7
+git config --global commit.gpgsign true
 
 echo "Initialise starship terminal prompt"
 cp ./starship.toml ~/.config/starship.toml
